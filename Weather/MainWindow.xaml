@@ -17,7 +17,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition SharedSizeGroup="A" Width="*" />
         </Grid.ColumnDefinitions>
-        <TextBox KeyDown="txtCityName_KeyDown" Name="txtCityName" Width="200" Height="20" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <TextBox KeyDown="txtCityName_KeyDown" Name="txtCityName" Width="200" Height="20" Grid.Column="0" Grid.Row="0" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="297,29,296.6,33.4" />
         <TextBlock Grid.Column="0" Grid.Row="0" IsHitTestVisible="False" Text="Enter city and press enter" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="30,0,0,0" Foreground="Gray">
             <TextBlock.Style>
                 <Style TargetType="{x:Type TextBlock}">
@@ -34,5 +34,8 @@
         <Label Name="lblCityAndCountry" Width="200" Height="28" Grid.Column="0" Grid.Row="2" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <Label Name="lblWeather" Width="200" Height="28" Grid.Column="0" Grid.Row="3" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
         <Label Name="lblWeatherDescription" Width="200" Height="28" Grid.Column="0" Grid.Row="4" HorizontalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        <Button x:Name="button" Content="Write simple weather&#xD;&#xA;" HorizontalAlignment="Left" Margin="297,9.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="34" Click="button_Click" FontSize="16"/>
+        <Button x:Name="button_Copy3" Content="Write detailed weather&#xA;" HorizontalAlignment="Left" Margin="297,48.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="34" Click="button_Click_details" FontSize="16"/>
+        <Button x:Name="button_Copy" Content="Write all weather details&#xD;&#xA;&#xA;Write all details" HorizontalAlignment="Left" Margin="297,87.6,0,0" Grid.Row="1" VerticalAlignment="Top" Width="200" Height="34" Click="button_Click_all_details" FontSize="16"/>
     </Grid>
 </Window>
